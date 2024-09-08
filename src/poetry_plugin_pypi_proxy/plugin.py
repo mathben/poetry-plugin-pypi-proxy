@@ -107,7 +107,7 @@ class PypiProxyPlugin(Plugin):
         # Add default repository
         poetry.pool.add_repository(
             LegacyProxyRepository(
-                name=proxy_id, url=f"{proxy_url}/simple/", config=poetry.config
+                name=proxy_id, url=f"{proxy_url}/", config=poetry.config
             ),
             priority=Priority.DEFAULT,
         )
